@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+ul{ 
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*FONTS*/
+@font-face {
+    font-family: 'Abril';
+    src: url('../Fonts/AbrilFatface-Regular.eot');
+    src: url('../Fonts/AbrilFatface-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AbrilFatface-Regular.woff2') format('woff2'),
+        url('../Fonts/AbrilFatface-Regular.woff') format('woff'),
+        url('../Fonts/AbrilFatface-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montit';
+    src: url('../Fonts/Montserrat-ThinItalic.eot');
+    src: url('../Fonts/Montserrat-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+        url('../Fonts/Montserrat-ThinItalic.woff') format('woff'),
+        url('../Fonts/Montserrat-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montnor';
+    src: url('../Fonts/Montserrat-Thin.eot');
+    src: url('../Fonts/Montserrat-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('../Fonts/Montserrat-Thin.woff') format('woff'),
+        url('Montserrat-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+/********Fin fonts*****/
+
+/********HEADER*********/
+header{
+    border: 1px solid black;
+    height: 100vh;
+    background: url(../img/chuttersnap-9G1kXjqOq4U-unsplash\(1\).jpg) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav{
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    margin-right: 10px;
+}
+header nav ul li a{
+    text-transform: uppercase;
+    font-family: "Montnor" bold;
+    font-size: 16px;
+    color: white;
+}
+header h1{
+    color: white;
+    text-align: center;
+    font-size: 200px;
+    text-transform: capitalize;
+    font-family: "Abril";
+}
+header h1::first-letter{
+
+}
+/********Fin HEADER*********/
+/**********MAIN*************/
+/****Section 1*****/
+section{
+    padding: 100px 0;
+}
+
+section>h2{
+    /*font-family: ;*/
+    font-size: 50px;
+    color: #555;
+    text-align: center;
+    text-transform: uppercase;
+}
+section>h3{
+    /*font-family: ;*/
+    font-size: 16px;
+    color: #546B22;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section>p{
+    /*font-family: ;*/
+    width:70%;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+.images{
+    display: flex;
+    flex-wrap: center
+}
+
+.image>div img{
+    height: 100px;
+    border-radius: 50%;
+    margin: 25px;
+}
+
+
+/******Section 2*****/
+section :nth-of-type(2){
+    background: #EDE6DD;
+}
+
+
+/********Fin MAIN*********/
