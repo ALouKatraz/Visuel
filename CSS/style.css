@@ -59,12 +59,14 @@ header{
 }
 header nav{
     position: fixed;
-    top: 3%;
-    right: 5%;
+    top: 30px;
+    right: 30px;
     background: #000;
     display: flex;
     justify-content: space-between;
+    padding:10px;
 }
+
 header nav ul{
     display: flex;
 }
@@ -73,9 +75,11 @@ header nav ul li{
 }
 header nav ul li a{
     text-transform: uppercase;
-    font-family: "Montnor" bold;
+    font-family: "Montnor" ;
+    font-weight: 600;
     font-size: 16px;
     color: white;
+    margin: 0 20px;
 }
 header h1{
     color: white;
@@ -88,40 +92,44 @@ header h1::first-letter{
 
 }
 /********Fin HEADER*********/
+
+
 /**********MAIN*************/
 /****Section 1*****/
 section{
     padding: 100px 0;
+    text-align: center;
 }
 
-section>h2{
-    /*font-family: ;*/
+h2{
+    font-family:"Abril";
     font-size: 50px;
     color: #555;
-    text-align: center;
     text-transform: uppercase;
 }
-section>h3{
-    /*font-family: ;*/
+h3{
+    font-family:"Abril";
     font-size: 16px;
     color: #546B22;
     letter-spacing: 1px;
-    text-align: center;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
-section>p{
-    /*font-family: ;*/
-    width:70%;
+p{
+    margin: 0px auto;
+    width: 70%;
+    font-family:"Montnor";
     font-size: 16px;
     color: #555;
-    text-align: center;
 }
 .images{
     display: flex;
-    flex-wrap: center
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
 }
 
-.image>div img{
+.images>div img{
     height: 100px;
     border-radius: 50%;
     margin: 25px;
@@ -129,9 +137,39 @@ section>p{
 
 
 /******Section 2*****/
-section :nth-of-type(2){
+.deuxieme{
     background: #EDE6DD;
+    display: flex;
+    justify-content: center;
+}
+.deuxieme>div:first-of-type{
+    width: 40%;
+}
+.deuxieme>div>p,.deuxieme>div>h2,.deuxieme>div>h3{
+    margin: 10px 100px;
+}
+.deuxieme>div:last-of-type{
+    margin-top: 100px;
+    background: #EDE6DD;
+    width: 40%;
+    text-align: left;
 }
 
-
 /********Fin MAIN*********/
+
+/********FOOTER***********/
+footer{
+    margin: 50px;
+    text-align: center;
+}
+
+/********************************************
+RESPONSIVE
+/*******************************************/
+@media screen and (max-width: 1000px) {
+    header nav {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+/**Média screen / média print***/
